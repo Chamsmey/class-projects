@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media(orientation:landscape){
+    .card{
+        width: 48%;
+    }
+}
+@media(orientation:portrait){
+    .container{
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+.card{
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.container{
+    margin: 10px auto;
+    justify-content: center;
+    width: 80%;
+    display: flex;
+}
+.card-header{
+    padding: 10px;
+}
+.card-header h1{
+    
+    font-weight: 400;
+}
+.card-body{
+    padding: 10px;
+    line-height: 1.4;
+}
+.bt{
+    border-top: 3px solid rgb(206, 5, 206);
+}
